@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const resourceRoutes = require('./routes/resourceRoutes');
+const cronJob = require('./services/expiryService');
 
 // Use bodyParser middleware to parse JSON data
 app.use(bodyParser.json());
